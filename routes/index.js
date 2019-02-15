@@ -18,7 +18,7 @@ router.get('/page3', function(req, res) {
     res.render('page3');
 });
 
-router.get('/page4', function(req, res) {
+router.get('/page4/', function(req, res) {
     res.render('page4');
 });
 
@@ -30,6 +30,8 @@ router.get('/page6', function(req, res) {
     res.render('page6');
 });
 
-
+router.get('/directly/to/page7/', function(req, res) {
+    res.render('page7');
+});
 
 module.exports = router;

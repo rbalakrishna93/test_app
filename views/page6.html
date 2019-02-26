@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> page 6</title>	
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css"
+</head>
+<body>
+	<h3>Javascript Authentication</h3>
+	<form action="/page8"  onsubmit="return validateForm()">
+	  <div>
+	  	<label for="username">Username:</label>
+		<input type="text" name="username" id="username" style="border :1px solid #c3c3c3">
+	  </div>
+	  <div>
+	  	<label for="password">Password:</label>
+	  	<input type="password" name="password" id="password" style="border :1px solid #c3c3c3">
+	  </div>
+	  <div>
+	  	<input class="button" type="submit" value="submit">
+	  </div>
+	</form>
+
+	<script>
+
+		function validateForm() {
+	var username=document.getElementById("username").value;
+	var password=document.getElementById("password").value;
+     if(username != '' && password != ''){
+     	if(username == 'mytest' && password == 'test123'){
+     	return true;	
+     	}
+     	}     	
+     else {
+     	return false;
+     }
+
+		}
+	</script>
+</script>
+</body>
+</html>

@@ -34,4 +34,8 @@ router.get('/directly/to/page7/', function(req, res) {
     res.render('page7');
 });
 
+router.get('/page8', function(req, res) {
+    res.render('page8');
+});
+
 module.exports = router;

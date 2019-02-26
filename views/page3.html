@@ -1,48 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <title>This is page 3</title>
-  <script>
-  function clickMe() {
-   document.getElementById("test2").style.fontSize = "25px"; 
-   document.getElementById("test2").style.color = "red";
-   document.getElementById("test2").style.backgroundColor = "black";        
-  }
-
-function setUpActions(){
-	var aLink = document.getElementById("actionLink");
-	aLink.Click= doSomething();
-}
-
-function doSomething(event){
-   document.getElementById('test3').innerHTML = Date();
-   alert("test");
+<title> page 8</title>
+<script type="text/javascript">
+window.onload=function(){
+  document.getElementById("test").textContent = "Hello, World!";
 }
 </script>
 </head>
-<body onload="setUpActions();">
-<h1>Page 3</h1>
-<h3>This page has javascript</h3>
-<button type="button"
-onclick="document.getElementById('test1').innerHTML = Date()">
-Click me to display Date and Time.</button>
-
-<p id="test1"></p>
-
-<p id="test2"> Style of this element can get changed by clicking the button below</p>
-<button type="button" onclick="clickMe()"> Click Me! </button>
-<div>
-<a href="/page2">Link 1</a>
-</div>
-<br>
-<div>
-<a href="/page4">Link 2</a>
-</div>
-<p>
-<a href="#" id="actionLink">Link to invoke javascript</a>
-</p>
-<div id="test3">
-</div>
+<body>
+  <h3>This page has javascript content</h3>
+  <p id="test"></p>
 </body>
 </html>

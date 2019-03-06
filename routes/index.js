@@ -35,7 +35,10 @@ router.get('/directly/to/page7/', function(req, res) {
 });
 
 router.get('/page8', function(req, res) {
-    res.render('page8');
+    setTimeout(() => next(res),5000);
+     
 });
-
+function next(res){
+	res.render('page8');
+}
 module.exports = router;

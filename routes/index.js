@@ -34,7 +34,7 @@ router.get('/directly/to/page7/', function(req, res) {
     res.render('page7');
 });
 
-router.get('/page8', function(req, res) {
+router.get('/fetchTimeout', function(req, res) {
     setTimeout(function() {next(res);},20000);
      
 });

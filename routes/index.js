@@ -34,6 +34,15 @@ router.get('/directly/to/page7/', function(req, res) {
     res.render('page7');
 });
 
+router.get('/unbalancedtags', function(req, res) {
+    res.render('unbalancedtags');
+});
+
+
+router.get('/stack', function(req, res) {
+    res.render('stackoverflow');
+});
+
 router.get('/fetchTimeout', function(req, res) {
     setTimeout(function() {next(res);},20000);
      

@@ -43,6 +43,16 @@ router.get('/stack', function(req, res) {
     res.render('stackoverflow');
 });
 
+router.get('/sitemap1', function(req, res) {
+    res.header('Content-Type', 'application/xml');
+    res.render('sitemap1');
+});
+
+router.get('/sitemap', function(req, res) {
+    res.header('Content-Type', 'application/xml');
+    res.render('sitemap');
+});
+
 router.get('/fetchTimeout', function(req, res) {
     setTimeout(function() {next(res);},20000);
      
